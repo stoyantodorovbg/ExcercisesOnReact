@@ -10,6 +10,12 @@ class Header extends Component {
                 <h2>
                    Menu {this.props.MenuItem}
                 </h2>
+                <p>
+                    <a href='/home'>Home</a>
+                </p>
+                <p>
+                    <a href='/about'>About</a>
+                </p>
             </div>
         )
     }

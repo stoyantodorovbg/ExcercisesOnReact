@@ -1,1 +1,1 @@
-# ExcercisesOnReact
+# ExercisesOnReact

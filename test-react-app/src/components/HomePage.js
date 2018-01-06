@@ -11,7 +11,7 @@ class HomePage extends Component {
             <div>
                 <Header menuItem = 'profile'></Header>
                 <h1>
-                    Test
+                    Hi from HOME PAGE :)
                 </h1>
                 <Cars/>
                 <Clock/>

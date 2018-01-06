@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/Header.js'
+import Header from './components/Header';
+import Routes from './Routes.js'
 
 class App extends Component {
     formatUser(firstName, lastName) {
@@ -20,11 +23,15 @@ class App extends Component {
       const otherElement = <h3>name: </h3>
 
       return (
-          <h1>
+          <div className='App'>
+              <Header/>
+              <div className='container'>
+                <Routes/>
+              </div>
           {otherElement}
       {this.formatUser(firstName, lastName)};
               {setInterval(this.clock, 1000)}
-          </h1>
+          </div>
 
   )
   }
