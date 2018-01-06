@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
     render() {
+        let id = 3
         return(
             <div>
                 <h1>
@@ -11,11 +13,18 @@ class Header extends Component {
                    Menu {this.props.MenuItem}
                 </h2>
                 <p>
-                    <a href='/home'>Home</a>
+                    <Link to='/home'>Home</Link>
                 </p>
                 <p>
-                    <a href='/about'>About</a>
+                    <Link to='/about'>About</Link>
                 </p>
+                <p>
+                    <Link to='/contact'>View a message</Link>
+                </p>
+                <p>
+                    <Link to={'/page/with/' + id}>View link with param</Link>
+                </p>
+                <p><a href='https://softuni.bg'>SoftUni</a></p>
             </div>
         )
     }

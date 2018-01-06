@@ -5,17 +5,25 @@ import Clock from './Clock.js'
 import Cars from './Cars.js'
 
 class HomePage extends Component {
+    constructor(props) {
+        super(props)
+
+        this.redirectToAbout = this.redirectToAbout.bind(this)
+    }
+
+    redirectToAbout() {
+        this.props.history.push('/about')
+    }
 
     render() {
         return(
             <div>
-                <Header menuItem = 'profile'></Header>
                 <h1>
                     Hi from HOME PAGE :)
                 </h1>
-                <Cars/>
-                <Clock/>
-                <Footer/>
+                <div>
+                    <button onClick={this.redirectToAbout}>Go to about</button>
+                </div>
             </div>
         )
     }
