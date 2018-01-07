@@ -5,12 +5,14 @@ import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
 import SomeParamPage from './components/SomeParamPage'
 import NotFound from './components/NotFoundPage';
+import CreateAuthorPage from "./components/CreateAuthorPage";
 
 const Routes = () => (
     <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path='/home' component={HomePage}/>
         <Route path='/about' component={AboutPage}/>
+        <Route path='/createAuthor' component={CreateAuthorPage}/>
         <Route path='/contact' render={props => (
             <h2>
                 It's message! ;)

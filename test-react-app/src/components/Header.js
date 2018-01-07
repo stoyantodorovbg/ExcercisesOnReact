@@ -19,6 +19,9 @@ class Header extends Component {
                     <Link to='/about'>About</Link>
                 </p>
                 <p>
+                    <Link to='/createAuthor'>Create Author</Link>
+                </p>
+                <p>
                     <Link to='/contact'>View a message</Link>
                 </p>
                 <p>
